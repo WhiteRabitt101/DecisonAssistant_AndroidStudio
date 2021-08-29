@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/directions"
+    tools:context=".RandomChoice">
+
+    <EditText
+        android:id="@+id/txtTB2"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTB1" />
+
+    <EditText
+        android:id="@+id/txtTB5"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTB4" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="215dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="8dp"
+        android:text="Select Random"
+        android:textColor="#FBF9F9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTB5" />
+
+    <EditText
+        android:id="@+id/txtTB1"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <EditText
+        android:id="@+id/txtTB4"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTB3" />
+
+    <EditText
+        android:id="@+id/txtTB3"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTB2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="104dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumOfOptionsTV">
+
+        <RadioButton
+            android:id="@+id/threeRB"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="3"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/fourRB"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="4"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="142dp" />
+
+        <RadioButton
+            android:id="@+id/fiveRB"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="5"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/NumOfOptionsTV"
+        android:layout_width="348dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/txtNumOfOptions"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

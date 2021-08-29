@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redcircles"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/paperImg"
+        android:layout_width="206dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/rockImg"
+        app:srcCompat="@drawable/paper" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="259dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="casual"
+        android:text="@string/txtTitle"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="63dp"
+        android:layout_height="463dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/RockRB"
+            android:layout_width="wrap_content"
+            android:layout_height="173dp"
+            android:paddingTop="100dp"
+            android:paddingBottom="100dp"
+            app:buttonTint="#F6F1F1" />
+
+        <RadioButton
+            android:id="@+id/PaperRB"
+            android:layout_width="wrap_content"
+            android:layout_height="123dp"
+            android:paddingTop="100dp"
+            android:paddingBottom="100dp"
+            app:buttonTint="#FFF8F8" />
+
+        <RadioButton
+            android:id="@+id/ScissorsRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp"
+            android:paddingBottom="100dp"
+            app:buttonTint="#FAFAFA" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/scissorsImg"
+        android:layout_width="209dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/paperImg"
+        app:srcCompat="@drawable/scissors" />
+
+    <ImageView
+        android:id="@+id/rockImg"
+        android:layout_width="194dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rock" />
+
+    <Button
+        android:id="@+id/BeginBTN"
+        android:layout_width="211dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="40dp"
+        android:ellipsize="middle"
+        android:soundEffectsEnabled="false"
+        android:text="@string/btnBegin"
+        android:textColor="#FFFFFF"
+        app:backgroundTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scissorsImg"
+        app:layout_constraintVertical_bias="0.064" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
